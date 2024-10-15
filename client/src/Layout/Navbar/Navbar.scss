@@ -1,0 +1,42 @@
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// @include MyFlex();
+
+nav {
+    background: red;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    position: relative;
+
+    img {
+        max-width: 60px;
+    }
+
+    .normalBox {
+        list-style: none;
+        background: orange;
+        @include MyFlex();
+        gap: 10px;
+    }
+
+    .respNavbar {
+        background: pink;
+        height: 100vh;
+        position: absolute;
+        right: 0px;
+        top: 145px;
+    }
+
+}

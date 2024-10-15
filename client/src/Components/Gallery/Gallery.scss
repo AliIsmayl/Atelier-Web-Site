@@ -1,0 +1,59 @@
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+@font-face {
+    font-family: "Befonts-License";
+    src: url("../../Font/Befonts-License.txt");
+}
+
+@font-face {
+    font-family: "readme-license";
+    src: url("../../Font/readme-license.txt");
+}
+
+@font-face {
+    font-family: "saturnest-wodo6";
+    src: url("../../Font/saturnest-wodo6.ttf");
+}
+
+@font-face {
+    font-family: "saturnestbold-2v3vo.ttf";
+    src: url("../../Font/saturnestbold-2v3vo.ttf");
+}
+
+@font-face {
+    font-family: "saturnestlight-vndn9";
+    src: url("../../Font/saturnestlight-vndn9.ttf");
+}
+
+@font-face {
+    font-family: "tan-mon-cheri";
+    src: url("../../Font/tan-mon-cheri.ttf");
+}
+
+#gallery {
+    background: greenyellow;
+    padding: 50px;
+    position: relative;
+    min-height: 80vh;
+
+    .text1 {
+        background: red;
+        font-size: 200px;
+    font-family: "tan-mon-cheri";
+        text-align: center;
+    }
+
+    .text2 {
+        background: pink;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 200px;
+        height: 300px;
+    }
+}

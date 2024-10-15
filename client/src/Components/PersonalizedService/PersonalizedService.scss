@@ -1,0 +1,84 @@
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+@font-face {
+    font-family: "Befonts-License";
+    src: url("../../Font/Befonts-License.txt");
+}
+
+@font-face {
+    font-family: "readme-license";
+    src: url("../../Font/readme-license.txt");
+}
+
+@font-face {
+    font-family: "saturnest-wodo6";
+    src: url("../../Font/saturnest-wodo6.ttf");
+}
+
+@font-face {
+    font-family: "saturnestbold-2v3vo.ttf";
+    src: url("../../Font/saturnestbold-2v3vo.ttf");
+}
+
+@font-face {
+    font-family: "saturnestlight-vndn9";
+    src: url("../../Font/saturnestlight-vndn9.ttf");
+}
+
+@font-face {
+    font-family: "tan-mon-cheri";
+    src: url("../../Font/tan-mon-cheri.ttf");
+}
+
+#personalizedService {
+    background: aqua;
+    padding: 50px;
+
+    .text1 {
+        background: red;
+        font-size: 150px;
+        font-family: "tan-mon-cheri";
+        max-width: 70%;
+    }
+
+    .text2 {
+        background: yellow;
+        padding: 0px 70px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .leftBox {
+            background: green;
+            height: 400px;
+            width: 500px;
+            border-left: 2px solid red;
+            padding: 20px 30px;
+
+            p {
+                font-size: 30px;
+                max-width: 90%;
+                margin-bottom: 20px;
+                font-family: "tan-mon-cheri";
+                line-height: 2;
+
+            }
+
+            span {
+                line-height: 1.3;
+                font-family: "saturnest-wodo6";
+
+            }
+        }
+
+        img {
+            margin-top: -100px;
+            width: 600px;
+            height: 700px;
+        }
+    }
+}

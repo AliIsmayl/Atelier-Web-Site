@@ -1,0 +1,65 @@
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+@font-face {
+    font-family: "Befonts-License";
+    src: url("../../Font/Befonts-License.txt");
+}
+@font-face {
+    font-family: "readme-license";
+    src: url("../../Font/readme-license.txt");
+}
+@font-face {
+    font-family: "saturnest-wodo6";
+    src: url("../../Font/saturnest-wodo6.ttf");
+}
+@font-face {
+    font-family: "saturnestbold-2v3vo.ttf";
+    src: url("../../Font/saturnestbold-2v3vo.ttf");
+}
+@font-face {
+    font-family: "saturnestlight-vndn9";
+    src: url("../../Font/saturnestlight-vndn9.ttf");
+}
+@font-face {
+    font-family: "tan-mon-cheri";
+    src: url("../../Font/tan-mon-cheri.ttf");
+}
+#readyQuality {
+    background: pink;
+    padding: 50px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+
+    .text1 {
+        background: greenyellow;
+        max-width: 550px;
+        font-size: 60px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px 10px;
+
+        p {
+            background: red;
+            border: 1px solid orange;
+    font-family: "tan-mon-cheri";
+
+        }
+    }
+
+    .text2 {
+        margin-top: 300px;
+        background: orange;
+        background: aqua;
+        font-size: 25px;
+    font-family: "saturnest-wodo6";
+        max-width: 500px;
+    }
+}

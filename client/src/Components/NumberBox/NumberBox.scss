@@ -1,0 +1,69 @@
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+@font-face {
+    font-family: "Befonts-License";
+    src: url("../../Font/Befonts-License.txt");
+}
+
+@font-face {
+    font-family: "readme-license";
+    src: url("../../Font/readme-license.txt");
+}
+
+@font-face {
+    font-family: "saturnest-wodo6";
+    src: url("../../Font/saturnest-wodo6.ttf");
+}
+
+@font-face {
+    font-family: "saturnestbold-2v3vo.ttf";
+    src: url("../../Font/saturnestbold-2v3vo.ttf");
+}
+
+@font-face {
+    font-family: "saturnestlight-vndn9";
+    src: url("../../Font/saturnestlight-vndn9.ttf");
+}
+
+@font-face {
+    font-family: "tan-mon-cheri";
+    src: url("../../Font/tan-mon-cheri.ttf");
+}
+
+#numberBox {
+    background: palevioletred;
+    padding: 0px 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        width: 300px;
+        background: red;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            font-family: "tan-mon-cheri";
+            font-size: 130px;
+        }
+
+        p {
+            font-family: "saturnest-wodo6";
+            font-size: 20px;
+        }
+
+        span {
+            font-family: "saturnest-wodo6";
+
+        }
+    }
+}
