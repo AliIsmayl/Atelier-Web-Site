@@ -1,84 +1,148 @@
 @mixin MyFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // @include MyFlex();
 @font-face {
-    font-family: "Befonts-License";
-    src: url("../../Font/Befonts-License.txt");
+  font-family: "Befonts-License";
+  src: url("../../Font/Befonts-License.txt");
 }
 
 @font-face {
-    font-family: "readme-license";
-    src: url("../../Font/readme-license.txt");
+  font-family: "readme-license";
+  src: url("../../Font/readme-license.txt");
 }
 
 @font-face {
-    font-family: "saturnest-wodo6";
-    src: url("../../Font/saturnest-wodo6.ttf");
+  font-family: "saturnest-wodo6";
+  src: url("../../Font/saturnest-wodo6.ttf");
 }
 
 @font-face {
-    font-family: "saturnestbold-2v3vo.ttf";
-    src: url("../../Font/saturnestbold-2v3vo.ttf");
+  font-family: "saturnestbold-2v3vo.ttf";
+  src: url("../../Font/saturnestbold-2v3vo.ttf");
 }
 
 @font-face {
-    font-family: "saturnestlight-vndn9";
-    src: url("../../Font/saturnestlight-vndn9.ttf");
+  font-family: "saturnestlight-vndn9";
+  src: url("../../Font/saturnestlight-vndn9.ttf");
 }
 
 @font-face {
-    font-family: "tan-mon-cheri";
-    src: url("../../Font/tan-mon-cheri.ttf");
+  font-family: "tan-mon-cheri";
+  src: url("../../Font/tan-mon-cheri.ttf");
 }
 
 #personalizedService {
-    background: aqua;
-    padding: 50px;
+  background: #dfd8c9;
+  padding: 100px 50px;
+  color: #00000099;
+  .text1 {
+    font-size: 120px;
+    font-family: "tan-mon-cheri";
+  }
 
-    .text1 {
-        background: red;
-        font-size: 150px;
+  .text2 {
+    padding: 0px 70px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    .leftBox {
+      height: 400px;
+      width: 500px;
+      border-left: 2px solid #0000005e;
+      padding: 20px 30px;
+      p {
+        font-size: 30px;
+        max-width: 90%;
+        margin-bottom: 20px;
         font-family: "tan-mon-cheri";
-        max-width: 70%;
+        line-height: 2;
+      }
+
+      span {
+        line-height: 1.3;
+        font-size: 20px;
+        font-family: "saturnest-wodo6";
+      }
+    }
+
+    img {
+      margin-top: -100px;
+      width: 600px;
+      height: 700px;
+    }
+  }
+}
+@media only screen and (max-width: 1473px) {
+  #personalizedService {
+    .text1 {
+      font-size: 100px;
     }
 
     .text2 {
-        background: yellow;
-        padding: 0px 70px 0px 0px;
-        display: flex;
-        justify-content: space-between;
-
-        .leftBox {
-            background: green;
-            height: 400px;
-            width: 500px;
-            border-left: 2px solid red;
-            padding: 20px 30px;
-
-            p {
-                font-size: 30px;
-                max-width: 90%;
-                margin-bottom: 20px;
-                font-family: "tan-mon-cheri";
-                line-height: 2;
-
-            }
-
-            span {
-                line-height: 1.3;
-                font-family: "saturnest-wodo6";
-
-            }
-        }
-
-        img {
-            margin-top: -100px;
-            width: 600px;
-            height: 700px;
-        }
+      justify-content: space-between;
+      padding: 0;
+      img {
+        margin-top: 0px;
+      }
     }
+  }
+}
+@media only screen and (max-width: 1208px) {
+  #personalizedService {
+    .text1 {
+      font-size: 60px;
+    }
+
+    .text2 {
+      flex-direction: column-reverse;
+      .leftBox {
+        p {
+          font-size: 25px;
+        }
+
+        span {
+          font-size: 22px;
+        }
+      }
+
+      img {
+        margin-bottom: 30px;
+        width: 400px;
+        height: 500px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 715px) {
+  #personalizedService {
+    padding: 100px 10px;
+    .text1 {
+      font-size: 30px;
+    }
+
+    .text2 {
+      .leftBox {
+        width: 100%;
+        margin-top: 10px;
+        min-height: max-content;
+        p {
+          font-size: 22px;
+        }
+
+        span {
+          font-size: 22px;
+        }
+      }
+
+      img {
+        margin-top: 30px;
+        width: 300px;
+        height: 400px;
+      }
+    }
+  }
 }

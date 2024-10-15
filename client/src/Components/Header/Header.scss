@@ -1,68 +1,72 @@
 @mixin MyFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 // @include MyFlex();
 @font-face {
-    font-family: "Befonts-License";
-    src: url("../../Font/Befonts-License.txt");
+  font-family: "Befonts-License";
+  src: url("../../Font/Befonts-License.txt");
 }
 @font-face {
-    font-family: "readme-license";
-    src: url("../../Font/readme-license.txt");
+  font-family: "readme-license";
+  src: url("../../Font/readme-license.txt");
 }
 @font-face {
-    font-family: "saturnest-wodo6";
-    src: url("../../Font/saturnest-wodo6.ttf");
+  font-family: "saturnest-wodo6";
+  src: url("../../Font/saturnest-wodo6.ttf");
 }
 @font-face {
-    font-family: "saturnestbold-2v3vo.ttf";
-    src: url("../../Font/saturnestbold-2v3vo.ttf");
+  font-family: "saturnestbold-2v3vo.ttf";
+  src: url("../../Font/saturnestbold-2v3vo.ttf");
 }
 @font-face {
-    font-family: "saturnestlight-vndn9";
-    src: url("../../Font/saturnestlight-vndn9.ttf");
+  font-family: "saturnestlight-vndn9";
+  src: url("../../Font/saturnestlight-vndn9.ttf");
 }
 @font-face {
-    font-family: "tan-mon-cheri";
-    src: url("../../Font/tan-mon-cheri.ttf");
+  font-family: "tan-mon-cheri";
+  src: url("../../Font/tan-mon-cheri.ttf");
 }
 
 #header {
-    min-height: 100vh;
-    background: orange;
-    @include MyFlex();
-    flex-direction: column;
-    gap: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+  min-height: 100vh;
+  @include MyFlex();
+  flex-direction: column;
+  gap: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 
-    img {
-        max-width: 140px;
-    }
+  img {
+    max-width: 70%;
+  }
 
-    h1 {
-        font-family: "tan-mon-cheri";
+  span {
+    margin-top: 20px;
+    background: white;
+    height: 1px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
 
-        font-size: 60px;
-    }
-
-    span {
-        margin-top: 20px;
-        background: white;
-        height: 1px;
-        width: 100px;
-        margin-bottom: 10px;
-    }
-
-    p {
+  p {
     font-family: "saturnest-wodo6";
-        font-size: 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 759px) {
+  #header {
+    overflow: hidden;
+    min-height: 90vh;
+    img {
+      max-width: 490px;
     }
+    p {
+      display: none;
+    }
+  }
 }

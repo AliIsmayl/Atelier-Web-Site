@@ -1,62 +1,80 @@
 @mixin MyFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 // @include MyFlex();
 @font-face {
-    font-family: "Befonts-License";
-    src: url("../../Font/Befonts-License.txt");
+  font-family: "Befonts-License";
+  src: url("../../Font/Befonts-License.txt");
 }
 @font-face {
-    font-family: "readme-license";
-    src: url("../../Font/readme-license.txt");
+  font-family: "readme-license";
+  src: url("../../Font/readme-license.txt");
 }
 @font-face {
-    font-family: "saturnest-wodo6";
-    src: url("../../Font/saturnest-wodo6.ttf");
+  font-family: "saturnest-wodo6";
+  src: url("../../Font/saturnest-wodo6.ttf");
 }
 @font-face {
-    font-family: "saturnestbold-2v3vo.ttf";
-    src: url("../../Font/saturnestbold-2v3vo.ttf");
+  font-family: "saturnestbold-2v3vo.ttf";
+  src: url("../../Font/saturnestbold-2v3vo.ttf");
 }
 @font-face {
-    font-family: "saturnestlight-vndn9";
-    src: url("../../Font/saturnestlight-vndn9.ttf");
+  font-family: "saturnestlight-vndn9";
+  src: url("../../Font/saturnestlight-vndn9.ttf");
 }
 @font-face {
-    font-family: "tan-mon-cheri";
-    src: url("../../Font/tan-mon-cheri.ttf");
+  font-family: "tan-mon-cheri";
+  src: url("../../Font/tan-mon-cheri.ttf");
+}
+@font-face {
+  font-family: "Amalfi\ Coast.ttf";
+  src: url("../../Font/Amalfi\ Coast.ttf");
 }
 #ourStory {
-    background: red;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    min-height: 150vh;
-
-    .text1 {
-        background: green;
-        font-size: 120px;
+  // background: red;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 300vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 10px;
+  .text1 {
+    font-size: 120px;
     font-family: "tan-mon-cheri";
+  }
 
+  .text2 {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+      font-family: "saturnest-wodo6";
+      max-width: 700px;
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 981px) {
+  #ourStory {
+    padding: 50px 10px;
+    flex-direction: column;
+    justify-content: start;
+    .text1 {
+      font-size: 50px;
     }
 
     .text2 {
-        background: blue;
-        text-align: end;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        p {
-        font-family: "saturnest-wodo6";
-            max-width: 700px;
-            font-size: 20px;
-
-        }
+      align-items: end;
+      p {
+        font-size: 18px;
+      }
     }
+  }
 }

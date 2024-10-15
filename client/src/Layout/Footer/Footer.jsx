@@ -31,7 +31,7 @@ function Footer() {
                 </div>
             </div>
             <div className="downBox">
-                2024 ©PM Systems. All Rights Reserved.
+                2024 © created by PM Systems. All Rights Reserved.
             </div>
         </footer>
     )
