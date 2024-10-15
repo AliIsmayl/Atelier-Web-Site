@@ -1,4 +1,5 @@
 import './App.css'
+import ExploreElegance from './Components/ExploreElegance/ExploreElegance'
 import Gallery from './Components/Gallery/Gallery'
 import Header from './Components/Header/Header'
 import NumberBox from './Components/NumberBox/NumberBox'
@@ -11,10 +12,11 @@ function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <OurStory />
       <ReadyQuality/>
+      <ExploreElegance/>
       <PersonalizedService/>
       <NumberBox/>
       <Gallery/>

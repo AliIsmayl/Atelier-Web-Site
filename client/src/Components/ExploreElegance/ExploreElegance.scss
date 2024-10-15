@@ -34,39 +34,20 @@
   font-family: "tan-mon-cheri";
   src: url("../../Font/tan-mon-cheri.ttf");
 }
-
-#numberBox {
-  background: #dfd8c9;
-  padding: 0px 50px;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+#exploreElegance {
+  background-color: #dfd8c9;
   .card {
-    width: 300px;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: #00000099;
-    p {
-      font-family: "tan-mon-cheri";
-      font-size: 130px;
-    }
-
-    .span1 {
-      font-family: "saturnest-wodo6";
-      font-size: 20px;
-    }
-
-    .span2 {
-      font-family: "saturnest-wodo6";
-    }
+    font-family: "saturnest-wodo6";
+    background-color: #47423f;
+    color: #dfd8c9;
+    padding: 10px;
+    @include MyFlex();
   }
+ 
 }
-@media only screen and (max-width: 861px){
-  #numberBox{
-    padding: 0px 10px;
-  }
+.splide.is-initialized,
+.splide.is-rendered {
+  padding: 0px;
+  margin: 0;
+  visibility: visible;
 }
