@@ -34,20 +34,25 @@
   font-family: "tan-mon-cheri";
   src: url("../../Font/tan-mon-cheri.ttf");
 }
+
 @font-face {
   font-family: "Amalfi\ Coast.ttf";
   src: url("../../Font/Amalfi\ Coast.ttf");
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+
 footer {
   background: #47423f;
   padding: 70px 50px;
   color: #dfd8c9;
   font-family: "Antic Didone", serif;
+
   .upBox {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+
     .leftBox {
       display: flex;
       flex-direction: column;
@@ -70,11 +75,13 @@ footer {
 
       p {
         font-size: 18px;
-        max-width: 250px;
+        margin-top: 20px
       }
     }
 
     .downBox2 {
+      margin-top: 20px;
+
       ul {
         li {
           @include MyFlex();
@@ -86,7 +93,8 @@ footer {
 
     .rightBox {
       @include MyFlex();
-overflow: hidden;
+      overflow: hidden;
+
       img {
         max-width: 400px;
       }
@@ -98,10 +106,12 @@ overflow: hidden;
     border-top: 1px solid #dfd8c9;
   }
 }
+
 @media only screen and (max-width: 895px) {
   footer {
     .upBox {
       flex-direction: column;
+
       .rightBox {
         img {
           margin-top: 30px;
@@ -110,6 +120,7 @@ overflow: hidden;
     }
   }
 }
+
 @media only screen and (max-width: 496px) {
   footer {
     padding: 70px 10px;

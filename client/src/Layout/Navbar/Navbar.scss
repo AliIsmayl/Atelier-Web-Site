@@ -16,22 +16,27 @@
   font-family: "Befonts-License";
   src: url("../../Font/Befonts-License.txt");
 }
+
 @font-face {
   font-family: "readme-license";
   src: url("../../Font/readme-license.txt");
 }
+
 @font-face {
   font-family: "saturnest-wodo6";
   src: url("../../Font/saturnest-wodo6.ttf");
 }
+
 @font-face {
   font-family: "saturnestbold-2v3vo.ttf";
   src: url("../../Font/saturnestbold-2v3vo.ttf");
 }
+
 @font-face {
   font-family: "saturnestlight-vndn9";
   src: url("../../Font/saturnestlight-vndn9.ttf");
 }
+
 @font-face {
   font-family: "tan-mon-cheri";
   src: url("../../Font/tan-mon-cheri.ttf");
@@ -43,6 +48,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 30px 40px;
+  z-index: 4;
+
 
   img {
     max-width: 60px;
@@ -53,17 +60,67 @@ nav {
     @include MyFlex();
     font-family: "tan-mon-cheri";
     color: #dfd8c9;
+
     li {
       cursor: pointer;
     }
+
     gap: 20px;
   }
 
+  .btn {
+    position: absolute;
+    @include MyFlex();
+    color: #dfd8c9;
+    font-size: 40px;
+    top: 50px;
+    right: 10px;
+    z-index: 4;
+
+  }
+
   .respNavbar {
-    background: pink;
+    background: #dfd8c9;
     height: 100vh;
     position: absolute;
     right: 0px;
+    top: 0px;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    width: 300px;
+    font-family: "tan-mon-cheri";
+    gap: 20px;
+    font-size: 25px;
+    padding: 50px 20px;
+    position: fixed;
     top: 145px;
+
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+.opened {
+  transform: translateX(100%);
+}
+
+@media only screen and (max-width: 568px) {
+  nav {
+    background: #dfd8c9;
+
+    .normalBox {
+      display: none;
+    }
+
+    .respNavbar {
+      display: flex;
+    }
+
+    .btn {
+      display: flex;
+    }
   }
 }
