@@ -13,17 +13,10 @@ function ExploreElegance() {
     perPage: 4,
     perMove: 1,
     arrows: false,
-    // autoStart: true,
-    // autoplay: true,
-    // interval: 5000,
-    // speed: 10000,
     pauseOnHover: true,
-    // resetProgress: false,
-    // rewind:true,
     labelledby: "carousel-heading",
     pagination: false,
     drag: "free",
-    // focus:'center',
     fixedHeight: "80px",
     breakpoints: {
       991: {

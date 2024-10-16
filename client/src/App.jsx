@@ -14,13 +14,19 @@ function App() {
     <>
       <Navbar />
       <Header />
-      <OurStory />
-      <ReadyQuality/>
-      <ExploreElegance/>
-      <PersonalizedService/>
-      <NumberBox/>
-      <Gallery/>
-      <Footer/>
+      <div id="About">
+        <OurStory />
+      </div>
+      <ReadyQuality />
+      <ExploreElegance />
+      <div id="Service">
+        <PersonalizedService />
+      </div>
+      <NumberBox />
+      <Gallery />
+      <div id="Contact">
+        <Footer />
+      </div>
     </>
   )
 }

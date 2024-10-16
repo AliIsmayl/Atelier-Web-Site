@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./OurStory.scss";
 import Back from "../../Image/Suit.png";
-// import Back2 from "../../Image/OurStoryBack2.png";
 
 function OurStory() {
 
