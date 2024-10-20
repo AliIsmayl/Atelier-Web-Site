@@ -9,50 +9,62 @@
   font-family: "Befonts-License";
   src: url("../../Font/Befonts-License.txt");
 }
+
 @font-face {
   font-family: "readme-license";
   src: url("../../Font/readme-license.txt");
 }
+
 @font-face {
   font-family: "saturnest-wodo6";
   src: url("../../Font/saturnest-wodo6.ttf");
 }
+
 @font-face {
   font-family: "saturnestbold-2v3vo.ttf";
   src: url("../../Font/saturnestbold-2v3vo.ttf");
 }
+
 @font-face {
   font-family: "saturnestlight-vndn9";
   src: url("../../Font/saturnestlight-vndn9.ttf");
 }
+
 @font-face {
   font-family: "tan-mon-cheri";
   src: url("../../Font/tan-mon-cheri.ttf");
 }
+
 @font-face {
   font-family: "Amalfi\ Coast.ttf";
   src: url("../../Font/Amalfi\ Coast.ttf");
 }
+
 #readyQuality {
   background: #dfd8c9;
+  margin-bottom: 100px;
   padding: 50px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
   color: #00000099;
+
   .text1 {
-    max-width: 500px;
+    max-width: 600px;
     height: 230px;
     display: flex;
     flex-wrap: wrap;
     gap: 0px 10px;
+    @include MyFlex();
+
     .txt1 {
-      font-size: 40px;
+      font-size: 50px;
       font-family: "Amalfi\ Coast.ttf";
       @include MyFlex();
     }
+
     .txt2 {
-      font-size: 22px;
+      font-size: 25px;
       font-family: "tan-mon-cheri";
       @include MyFlex();
     }
@@ -60,33 +72,39 @@
 
   .text2 {
     margin-top: 300px;
-    font-size: 22px;
+    font-size: 25px;
     font-family: "saturnest-wodo6";
-    max-width: 550px;
+    max-width: 600px;
   }
 }
+
 @media only screen and (max-width: 1139px) {
   #readyQuality {
     flex-direction: column;
+
     .text1 {
       max-width: 500px;
     }
 
     .text2 {
-      margin-top: 0px;
+      margin-top: 80px;
     }
   }
 }
+
 @media only screen and (max-width: 639px) {
   #readyQuality {
     flex-direction: column;
     padding: 50px 10px;
+
     .text1 {
       width: 300px;
+
       .txt1 {
         font-size: 23px;
-       
+
       }
+
       .txt2 {
         font-size: 18px;
       }
