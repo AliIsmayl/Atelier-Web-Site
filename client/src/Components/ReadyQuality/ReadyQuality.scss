@@ -81,13 +81,14 @@
 @media only screen and (max-width: 1139px) {
   #readyQuality {
     flex-direction: column;
+    margin-bottom: 10px;
 
     .text1 {
       max-width: 500px;
     }
 
     .text2 {
-      margin-top: 80px;
+      margin-top: 30px;
     }
   }
 }
@@ -98,15 +99,15 @@
     padding: 50px 10px;
 
     .text1 {
-      width: 300px;
+      width: 100%;
 
       .txt1 {
-        font-size: 23px;
+        font-size: 24px;
 
       }
 
       .txt2 {
-        font-size: 18px;
+        font-size: 19px;
       }
     }
 
