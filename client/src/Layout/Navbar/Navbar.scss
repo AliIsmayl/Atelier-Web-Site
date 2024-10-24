@@ -50,7 +50,6 @@ nav {
   padding: 30px 40px;
   z-index: 4;
 
-
   img {
     max-width: 60px;
   }
@@ -76,7 +75,6 @@ nav {
     top: 50px;
     right: 10px;
     z-index: 4;
-
   }
 
   .respNavbar {
@@ -94,8 +92,7 @@ nav {
     font-size: 25px;
     padding: 50px 20px;
     position: fixed;
-    top: 145px;
-
+    top: 71px;
   }
 
   .btn {
@@ -104,23 +101,28 @@ nav {
 }
 
 .opened {
-  transform: translateX(100%);
+  transform: translateX(0%) !important;
 }
 
 @media only screen and (max-width: 568px) {
   nav {
     background: #dfd8c9;
-
+    padding: 0px 40px;
+    img {
+      max-width: 50px;
+    }
     .normalBox {
       display: none;
     }
 
     .respNavbar {
       display: flex;
+      transform: translateX(100%);
     }
 
     .btn {
       display: flex;
+      top: 16px;
     }
   }
 }

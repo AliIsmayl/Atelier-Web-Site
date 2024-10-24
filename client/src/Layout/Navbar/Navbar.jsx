@@ -41,7 +41,7 @@ function Navbar() {
         style={{ color: isRed ? "#dfd8c9" : "#47423f" }}
         onClick={handleOpen}
       >
-        {openNav ? <IoMdMenu /> : <IoCloseSharp />}
+        {openNav ? <IoCloseSharp /> : <IoMdMenu />}
       </div>
       <ul className={`respNavbar ${openNav ? "opened" : ""}`}>
         <ScrollLink
