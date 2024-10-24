@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../../Image/FooterPhoto.png";
-import Back from "../../Image/HeaderBack.png";
+import Back from "../../Image/HeaderBack.webp";
 function Header() {
   return (
     <section id="header" style={{ backgroundImage: `url(${Back})` }}>

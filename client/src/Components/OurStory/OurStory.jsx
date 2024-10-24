@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./OurStory.scss";
-import Back from "../../Image/Suit.png";
+import Back from "../../Image/Suit.webp";
 
 function OurStory() {
 

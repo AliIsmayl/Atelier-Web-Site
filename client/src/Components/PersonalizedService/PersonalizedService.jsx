@@ -1,6 +1,6 @@
 import React from "react";
 import "./PersonalizedService.scss";
-import Photo from "../../Image/personalPhoto.png";
+import Photo from "../../Image/personalPhoto.webp";
 
 function PersonalizedService() {
   return (
